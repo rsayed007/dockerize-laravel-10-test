@@ -43,6 +43,6 @@ class User extends Authenticatable
 
     public function logins()
     {
-        return $this->hasMany(Login::class)->orderBy('id','DESC');
+        return $this->hasMany(Login::class);
     }
 }
